@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/tagline"
+                android:textSize="29dp"
+                android:background="#FFC107"
+                android:paddingTop="20dp"
+                android:paddingLeft="7dp"
+                android:layout_height="match_parent"
+
+            ></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="407dp"
+            android:layout_height="401dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/first"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="#ADFDA1A1"
+                    android:hint="0.0"
+                    android:inputType="numberDecimal"
+                    android:textFontWeight="40"
+                    android:textSize="60dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radioGroup1"
+                        android:background="#fff">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:id="@+id/cel1"
+                        android:layout_height="35dp"
+                        android:text="CELCIUS"
+                        android:textSize="25dp"
+                        android:layout_margin="5dp"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/far1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="FARENHEIT"
+                        android:layout_margin="5dp"
+                        android:textSize="25dp"></RadioButton>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/second"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="#C37ACAE1"
+                    android:hint="0.0"
+                    android:inputType="numberDecimal"
+                    android:textFontWeight="40"
+                    android:textSize="60dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+
+
+                    <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                        android:id="@+id/radioGroup2"
+                        android:background="#fff">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:id="@+id/cel2"
+                        android:layout_height="35dp"
+                        android:text="CELCIUS"
+                        android:textSize="25dp"
+                        android:layout_margin="5dp"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/far2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="FARENHEIT"
+                        android:layout_margin="5dp"
+                        android:textSize="25dp"></RadioButton>
+                </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:paddingLeft="90dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Conver"
+                android:layout_width="206dp"
+                android:layout_height="82dp"
+                android:textSize="29dp"
+                android:text="CONVERT"
+                android:layout_margin="13dp">
+
+            </com.google.android.material.button.MaterialButton>
+            <Button
+                android:id="@+id/Clear"
+                android:layout_width="206dp"
+                android:layout_height="82dp"
+                android:textSize="29dp"
+                android:layout_margin="13dp"
+                android:text="CLEAR" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
